@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import { VocabularyReview } from "@/components/VocabularyReview"
-import { PronunciationPractice } from "@/components/PronunciationPractice"
+import { PronunciationPractice } from "../components/PronunciationPractice"
 import { PronunciationProgress } from "@/components/PronunciationProgress"
 import { GamificationSystem } from "@/components/GamificationSystem"
 import { UserProfile } from "@/components/UserProfile"
