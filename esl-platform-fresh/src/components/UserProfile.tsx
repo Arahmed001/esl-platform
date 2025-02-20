@@ -1,9 +1,9 @@
 "use client"
 
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Progress } from "../components/ui/progress"
 import { Badge } from "../components/ui/badge"
-import { Badge } from "@/components/ui/badge"
 import { Loader2, User, Star, Zap } from 'lucide-react'
 
 interface UserData {
@@ -63,7 +63,7 @@ export function UserProfile() {
             <span>XP to next level</span>
             <span>{xpToNextLevel} XP</span>
           </div>
-          <Progress value={((1000 - xpToNextLevel) / 1000) * 100} className="h-2 bg-gray-200" indicatorClassName="bg-gradient-to-r from-green-400 to-blue-500" />
+          <Progress value={((1000 - xpToNextLevel) / 1000) * 100} className="h-2 bg-gray-200" />
         </div>
         <div className="flex justify-between items-center">
           <span className="text-gray-700">Current Streak</span>

@@ -1,8 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
-import { Button } from "./ui/button"
+import { Button } from "../components/ui/button"
 import { ThumbsUp, ThumbsDown, RefreshCw } from 'lucide-react'
 
 export function VocabularyReview() {
@@ -42,10 +42,7 @@ export function VocabularyReview() {
               </div>
             </div>
           ) : (
-            <Button 
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white" 
-              onClick={() => setShowDefinition(true)}
-            >
+            <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white" onClick={() => setShowDefinition(true)}>
               Show Definition
             </Button>
           )}
