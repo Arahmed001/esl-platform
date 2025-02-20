@@ -1,10 +1,10 @@
 import { Suspense } from "react"
-import { VocabularyReview } from "@/components/VocabularyReview"
+import { VocabularyReview } from "../components/VocabularyReview"
 import { PronunciationPractice } from "../components/PronunciationPractice"
-import { PronunciationProgress } from "@/components/PronunciationProgress"
-import { GamificationSystem } from "@/components/GamificationSystem"
-import { UserProfile } from "@/components/UserProfile"
-import { Loader2, BookOpen, Mic, TrendingUp, Trophy } from 'lucide-react'
+import { PronunciationProgress } from "../components/PronunciationProgress"
+import { GamificationSystem } from "../components/GamificationSystem"
+import { UserProfile } from "../components/UserProfile"
+import { Loader2, BookOpen, Mic, TrendingUp, Trophy } from lucide-react
 
 export default function Page() {
   return (
@@ -42,7 +42,7 @@ export default function Page() {
   )
 }
 
-function LoadingCard({ icon, text }: { icon: React.ReactNode, text: string }) {
+function LoadingCard({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center h-64">
       {icon}
